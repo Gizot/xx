@@ -1,0 +1,12 @@
+<p id="demo">{{hello}}</p>
+<span>{{hello}}</span><br/>
+    <input type="text" [(ngModel)]="hello"/> <br/>
+    <select [(ngModel)]="selectedOption">
+        <option value="1" >Seçenek 1 </option>
+        <option value="2">Seçenek 2</option>
+    </select>
+<button (click)="HandleButtonClick()">Change Hello Text</button>
+
+<div [innerHTML]="helloParagraph"></div>
+<div *ngIf="hello.length===5"> Şu anda hello değişkeni 5 karakterlidir. </div>
+<app-footer></app-footer>
